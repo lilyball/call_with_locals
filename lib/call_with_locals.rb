@@ -1,7 +1,8 @@
 class Proc
   # Calls the proc with the specified locals
   # The last arg to call_with_locals must be a Hash
-  # Example: proc { |x| x + y }.call_with_locals(1, :y => 2) => 3
+  #
+  #   proc { |x| x + y }.call_with_locals(1, :y => 2) => 3
   def call_with_locals(*args)
     locals = args.pop
     unless Hash === locals
