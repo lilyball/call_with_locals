@@ -7,8 +7,8 @@ Ads a new method Proc#call_with_locals to call the proc with new locals
 
 == EXAMPLES
 
->> proc { x + 1 }.call_with_locals(x => 3)
-=> 4
+  >> proc { x + 1 }.call_with_locals(x => 3)
+  => 4
 
->> proc { |a| f[a] }.call_with_locals(3, :f => proc { |x| x + 4 })
-=> 7
+  >> proc { |a| f[a] }.call_with_locals(3, :f => proc { |x| x + 4 })
+  => 7
