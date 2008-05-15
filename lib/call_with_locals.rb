@@ -1,5 +1,3 @@
-require 'inline'
-
 class Proc
   # Calls the proc with the specified locals
   # The last arg to call_with_locals must be a Hash
